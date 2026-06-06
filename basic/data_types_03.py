@@ -1,3 +1,5 @@
+import math
+
 marks : int = 10
 first_name = "Suryaansh"
 
@@ -12,6 +14,7 @@ marks = 20
 print(marks)
 print(total_marks)
 
+print("#####  List ####")
 my_subjects = ["Maths", "Science", "English"]
 
 print(my_subjects)
@@ -32,6 +35,17 @@ my_subjects.insert(2, "biology")
 print("My subjects after inserting 'biology' at index 2:", my_subjects)
 
 print("#####  tuple ####")
-my_directions = ("North", "South", "East", "West")
+my_directions = ("North", "South", "East", "West","North")
 print(my_directions)
-print(dir(my_directions))
+##print(dir(my_directions))
+print(my_directions.count("North"))
+print(len(my_directions))
+
+
+print("#####  Dictionary ####")
+my_marks = {"Maths": 95, "Science": 90, "English": 85}
+print(my_marks)
+my_marks["History"] = 80
+print(my_marks)
+
+print(dir(my_marks))
