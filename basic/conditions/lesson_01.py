@@ -1,6 +1,13 @@
-import datetime 
-age = int(input("What is your age? "))
-day = datetime.datetime.now().strftime("%A")
-price = 18 if age > 18 else 12
-price = price -2 if day == "Sunday" else price
-print(f"Your ticket price is: {price}") 
+try:
+    age = abs(int(input("What is your age? " )))
+except ValueError:
+    print("Please enter a valid age.")
+    exit()
+if(age<13):
+    print("You are Child")
+elif 13<=age<20:
+    print("You are Teeneger")
+elif 20<= age < 60:
+    print("You are Adult")
+else:
+    print("You are Senior Citizan")
